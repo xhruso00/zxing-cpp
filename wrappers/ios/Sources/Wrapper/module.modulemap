@@ -1,5 +1,7 @@
 module ZXingCppWrapper {
     umbrella header "UmbrellaHeader.h"
+    exclude header "ZXIFormatHelper.h"
+    exclude header "Reader/ZXIPosition+Helper.h"
     export *
     module * { export * }
 }
