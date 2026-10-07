@@ -21,11 +21,11 @@ let package = Package(
             name: "ZXingCppWrapper",
             dependencies: ["ZXingCpp"],
             path: "Sources/Wrapper",
-            publicHeadersPath: ".",
+            publicHeadersPath: "include",
             cxxSettings: [
-                .unsafeFlags(["-stdlib=libc++"]),
-                .unsafeFlags(["-std=gnu++17"])
+                .headerSearchPath(".")
             ]
         )
-    ]
+    ],
+    cxxLanguageStandard: .gnucxx17
 )

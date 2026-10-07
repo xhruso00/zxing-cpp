@@ -27,6 +27,8 @@
               validateITFCheckSum:(BOOL)validateITFCheckSum
                   downscaleFactor:(uint8_t)downscaleFactor
                downscaleThreshold:(uint16_t)downscaleThreshold
+                        binarizer:(uint8_t)binarizer
+                           isPure:(BOOL)isPure
                           formats:(NSArray<NSNumber*>*)formats {
     self = [super init];
     self.zxingHints = ZXing::DecodeHints();
@@ -40,6 +42,8 @@
     self.validateITFCheckSum = validateITFCheckSum;
     self.downscaleFactor = downscaleFactor;
     self.downscaleThreshold = downscaleThreshold;
+    self.binarizer = binarizer;
+    self.isPure = isPure;
     self.formats = formats;
     return self;
 }

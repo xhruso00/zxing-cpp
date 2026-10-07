@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) BOOL validateITFCheckSum;
 @property(nonatomic) uint8_t downscaleFactor;
 @property(nonatomic) uint16_t downscaleThreshold;
+@property(nonatomic) uint8_t binarizer;
+@property(nonatomic) BOOL isPure;
 
 @property(nonatomic) NSInteger maxNumberOfSymbols;
 /// An array of ZXIFormat
@@ -31,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
               validateITFCheckSum:(BOOL)validateITFCheckSum
                   downscaleFactor:(uint8_t)downscaleFactor
                downscaleThreshold:(uint16_t)downscaleThreshold
+                        binarizer:(uint8_t)binarizer
+                           isPure:(BOOL)isPure
                           formats:(NSArray<NSNumber*>*)formats;
 @end
 

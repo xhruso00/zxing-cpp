@@ -1,0 +1,5 @@
+module ZXingCppWrapper {
+    umbrella header "ZXingCppWrapper.h"
+    export *
+    module * { export * }
+}
