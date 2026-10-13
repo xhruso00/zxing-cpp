@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "ZXingCppWrapper",
     platforms: [
-        .macOS(.v12)
+        .macOS(.v10_13)
     ],
     products: [
         .library(
